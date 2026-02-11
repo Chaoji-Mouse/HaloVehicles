@@ -28,4 +28,5 @@ This is an example addon mod for Superb Warfare, demonstrating how to create cus
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the LICENSE file for details.
+
