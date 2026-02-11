@@ -1,0 +1,13 @@
+{
+  "type": "superbwarfare:vehicle_assembling",
+  "category": "land",
+  "inputs": [
+    "2 #superbwarfare:storage_blocks/steel",
+    "superbwarfare:small_battery_pack",
+    "4 superbwarfare:wheel",
+    "superbwarfare:large_motor"
+  ],
+  "result": {
+    "entity": "halovecs:m12"
+  }
+}
