@@ -1,0 +1,174 @@
+{
+  "ID": "halovecs:m12hmg",
+  "MaxHealth": 200,
+  "MaxEnergy": 7000000,
+  "OBB": [
+    {
+      "Size": [1.3, 1, 2.6],
+      "Position": [0, 1, 0]
+    }
+  ],
+  
+  // 添加炮台位置（相对于车辆中心）
+  "TurretPos": [0, 1.5, -2],
+  
+  // 炮台转动速度（x: 俯仰速度, y: 偏航速度）
+  "TurretTurnSpeed": [10, 10],
+  
+  // 炮台偏航角度范围（最小, 最大）
+  "TurretYawRange": [-180, 180],
+  
+  // 炮台俯仰角度范围（最小俯角, 最大仰角）
+  "TurretPitchRange": [-30, 60],
+  
+  // 炮台控制座位索引（0-based）
+  "TurretControllerIndex": 2,  // 第三个座位控制炮台
+  
+  // 可选：炮管位置（用于射击计算）
+  "BarrelPos": [0, 1, 0],
+
+  "Seats": [
+    {
+      "IsEnclosed": true,
+      "Transform": "Vehicle",
+      "Position": [0.6, 0.5, -0.2],
+      "MinPitch": -30,
+      "MaxPitch": 60,
+      "MinYaw": -95,
+      "MaxYaw": 95,
+      "CameraPos": {
+        "Transform": "Vehicle",
+        "Position": [0.6, 1.5, 0]
+      }
+    },
+    {
+      "IsEnclosed": true,
+      "Transform": "Vehicle",
+      "Position": [-0.8, 1, -0.2],
+      "MinPitch": -30,
+      "MaxPitch": 60,
+      "MinYaw": -160,
+      "MaxYaw": 160,
+      "CameraPos": {
+        "Transform": "Vehicle",
+        "Position": [-0.8, 1.5, 0]
+      }
+    },
+    {
+      "IsEnclosed": true,
+      "Transform": "Turret",
+      "Position": [0, 0.5, 0],
+      "MinPitch": -30,
+      "MaxPitch": 60,
+      //"MinYaw": -95,
+      //"MaxYaw": 95,
+      "Weapons": ["MainGun"],  // 添加武器引用
+      "CanRotateBody": true,  // 允许旋转身体
+      "CameraPos": {
+        "Transform": "Turret",
+        "Position": [0, 2.5, 0]
+      }
+    }
+  ],
+  "EngineType": "Wheel",
+  "EngineInfo": {
+    "Buoyancy": 0,
+    "EnergyCostRate": 64,
+    "WheelRotSpeed": 1.5,
+    "WheelDifferential": 2,
+    "MaxForwardSpeedRate": 1,
+    "MaxBackwardSpeedRate": 1,
+    "Increment": 0.05,
+    "Decrement": 0.03,
+    "SteeringSpeed": 0.25,
+    "EngineSoundVolume": 0.6
+  },
+  "UpStep": 2,
+  "Mass": 7.5,
+  "RotateOffsetHeight": 0.5,
+  "DamageModifiers": [
+    "All * 0.5",
+    "minecraft:arrow * 0.2",
+    "minecraft:trident * 0.4",
+    "minecraft:mob_attack * 0.4",
+    "minecraft:mob_attack_no_aggro * 0.4",
+    "minecraft:mob_projectile * 0.4",
+    "minecraft:player_attack * 0.4",
+    "minecraft:lava - -4",
+    "minecraft:lava * 4",
+    "@minecraft:tnt * 3",
+    "@minecraft:tnt_minecart * 3",
+    "minecraft:explosion * 4",
+    "minecraft:player_explosion * 4",
+    "superbwarfare:projectile_hit * 0.8",
+    "superbwarfare:grapeshot_hit * 0.2",
+    "@#superbwarfare:aerial_bomb * 1.4",
+    "#superbwarfare:projectile * 0.16",
+    "superbwarfare:vehicle_strike * 0.7",
+    "@superbwarfare:cannon_shell * 0.6",
+    "@superbwarfare:small_cannon_shell * 0.8",
+    "@superbwarfare:gun_grenade * 1.4",
+    "@superbwarfare:rgo_grenade * 3",
+    "@superbwarfare:hand_grenade * 2.5",
+    "@superbwarfare:mortar_shell * 2",
+    "All - 4"
+  ],
+  "VehicleContainerType": "Medium",
+  "DestroyInfo": {
+    "ParticleType": "Huge",
+    "ExplosionDamage": 120,
+    "ExplosionRadius": 7
+  },
+  "ThirdPersonCameraPos": [0, 1, 5],
+  "VehicleIcon": "halovecs:textures/vehicle_icon/m12_icon.png",
+  "ContainerIcon": "superbwarfare:textures/gui/vehicle/type/civilian.png",
+  "Type": "Car",
+  "CollisionLevel": {
+    "Level": 3,
+    "PowerLimits": [
+      [0, 0, true],
+      [0, 0, true],
+      [0.15, 0.09, false],
+      [1, 0.3, false]
+    ]
+  },
+  "EngineSound": "superbwarfare:lav_150_engine",
+  "HornSound": "@Land",
+  "TerrainCompat": [[1.156, 0, 1.594], [-1.156, 0, 1.594], [1.156, 0, -1.594], [-1.156, 0, -1.594]],
+  "InertiaRotateRate": 1,
+
+  "Weapons": {
+    "MainGun": {
+      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/gun_7_62mm.png",
+      "DefaultFireMode": "Auto",
+      "AvailableFireModes": ["Auto"],
+      "Projectile": "superbwarfare:projectile",
+      "RPM": 800,
+      "Damage": 9.5,
+      "BypassesArmor": 0.3,
+      "Velocity": 30,
+      "Spread": 0.5,
+      "HeatPerShoot": 2,
+      "NaturalCooldown": 1,
+      "ShootAnimationTime": 2,
+      "RecoilTime": 22,
+      "RecoilForce": 0.1,
+      "Crosshair": "@VehicleCommonGun",
+      "CrosshairColor": "0xffaa00",
+      "Name": "weapon.halovecs.m12hmg_main",
+      "SoundInfo": {
+        "Fire1P": "superbwarfare:coax_fire_1p",
+        "Fire3P": "superbwarfare:m_60_fire_3p",
+        "Fire3PFar": "superbwarfare:m_60_far",
+        "Fire3PVeryFar": "superbwarfare:m_60_veryfar"
+      },
+      "SoundRadius": 12,
+      "AmmoType": "@RifleAmmo",
+      "ShootPos": {
+        "Transform": "Barrel",
+        "Positions": [[0, 1, 0]],
+        "Directions": ["Barrel"]
+      }
+    }
+  }
+}

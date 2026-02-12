@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "GPL-3.0"
+
+[[mods]]
+modId = "halovecs"
+version = "0.2.25"
+displayName = "Halovecs"
+authors = "cmhh"
+description = "A Superb Warfare addon"
+
+[[dependencies.halovecs]]
+modId = "neoforge"
+mandatory = true
+versionRange = "[21.1.100,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.halovecs]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.halovecs]]
+modId = "superbwarfare"
+type = "required"
+versionRange = "[0.8.8,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.halovecs]]
+modId = "geckolib"
+type = "required"
+versionRange = "[4.4.6,)"
+ordering = "NONE"
+side = "BOTH"
