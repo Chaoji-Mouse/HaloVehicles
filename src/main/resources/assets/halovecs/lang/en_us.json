@@ -3,8 +3,11 @@
   "entity.halovecs.m12": "M12 Transport Vehicle",
   "item.halovecs.m12hmg_container": "M12hmg Transport Container",
   "entity.halovecs.m12hmg": "M12hmg Transport Vehicle",
+  "item.halovecs.m12roc_container": "M12roc Transport Container",
+  "entity.halovecs.m12roc": "M12roc Transport Vehicle",
   "itemGroup.halovecs": "Halovecs",
   "item_group.halovecs.main": "Halovecs",
   "weapon.halovecs.m12hmg_main": "M41 AA Machine Gun",
-  "item.halovecs.m12hmg_gun": "M41 AA Machine Gun"
+  "item.halovecs.m12hmg_gun": "M41 AA Machine Gun",
+  "weapon.halovecs.m12roc_main": "M79"
 }
