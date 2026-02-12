@@ -4,7 +4,7 @@ license = "GPL-3.0"
 
 [[mods]]
 modId = "halovecs"
-version = "0.2.25"
+version = "0.2.26"
 displayName = "Halovecs"
 authors = "cmhh"
 description = "A Superb Warfare addon"
