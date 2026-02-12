@@ -8,6 +8,7 @@ version = "0.2.25"
 displayName = "Halovecs"
 authors = "cmhh"
 description = "A Superb Warfare addon"
+displayURL = "https://github.com/Chaoji-Mouse/HaloVehicles"
 
 [[dependencies.halovecs]]
 modId = "neoforge"
