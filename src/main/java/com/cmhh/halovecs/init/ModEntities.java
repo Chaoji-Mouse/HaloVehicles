@@ -2,6 +2,7 @@ package com.cmhh.halovecs.init;
 
 import com.cmhh.halovecs.Halovecs;
 import com.cmhh.halovecs.entity.vehicle.M12Entity;
+import com.cmhh.halovecs.entity.vehicle.M12gauEntity;
 import com.cmhh.halovecs.entity.vehicle.M12hmgEntity;
 import com.cmhh.halovecs.entity.vehicle.M12rocEntity;
 
@@ -41,6 +42,16 @@ public class ModEntities {
     public static final DeferredHolder<EntityType<?>, EntityType<M12rocEntity>> M12roc = 
         register("m12roc",
             EntityType.Builder.of(M12rocEntity::new, MobCategory.MISC)
+                .setTrackingRange(512)      // 追踪范围（区块）
+                .setUpdateInterval(1)       // 更新间隔（tick）
+                .fireImmune()               // 防火
+                .sized(2.6f, 2.0f)          // 碰撞箱大小（宽度, 高度）
+        );
+    
+    // 注册 M12gau 运输载具实体
+    public static final DeferredHolder<EntityType<?>, EntityType<M12gauEntity>> M12gau = 
+        register("m12gau",
+            EntityType.Builder.of(M12gauEntity::new, MobCategory.MISC)
                 .setTrackingRange(512)      // 追踪范围（区块）
                 .setUpdateInterval(1)       // 更新间隔（tick）
                 .fireImmune()               // 防火

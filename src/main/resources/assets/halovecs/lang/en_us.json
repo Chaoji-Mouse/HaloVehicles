@@ -9,5 +9,8 @@
   "item_group.halovecs.main": "Halovecs",
   "weapon.halovecs.m12hmg_main": "M41 AA Machine Gun",
   "item.halovecs.m12hmg_gun": "M41 AA Machine Gun",
-  "weapon.halovecs.m12roc_main": "M79"
+  "weapon.halovecs.m12roc_main": "M79",
+  "weapon.halovecs.m12gau_main": "M68",
+  "item.halovecs.m12gau_container": "M12 Gauss Wart Hog",
+  "entity.halovecs.m12gau": "M12 Gauss Wart Hog"
 }

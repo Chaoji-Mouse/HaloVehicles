@@ -9,6 +9,9 @@
   "item_group.halovecs.main": "Halovecs",
   "weapon.halovecs.m12hmg_main": "M41 防空机枪",
   "item.halovecs.m12hmg_gun": "M41 防空机枪",
-  "weapon.halovecs.m12roc_main": "M79 多管防空火箭发射器"
+  "weapon.halovecs.m12roc_main": "M79 多管防空火箭发射器",
+  "weapon.halovecs.m12gau_main": "M68 异步线性感应发射器",
+  "item.halovecs.m12gau_container": "M12 高斯疣猪号",
+  "entity.halovecs.m12gau": "M12 高斯疣猪号"
   
 }

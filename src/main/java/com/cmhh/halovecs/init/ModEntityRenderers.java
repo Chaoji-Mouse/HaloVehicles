@@ -2,6 +2,7 @@ package com.cmhh.halovecs.init;
 
 import com.cmhh.halovecs.Halovecs;
 import com.cmhh.halovecs.client.renderer.entity.M12Renderer;
+import com.cmhh.halovecs.client.renderer.entity.M12gauRenderer;
 import com.cmhh.halovecs.client.renderer.entity.M12hmgRenderer;
 import com.cmhh.halovecs.client.renderer.entity.M12rocRenderer;
 import net.neoforged.api.distmarker.Dist;
@@ -20,5 +21,7 @@ public class ModEntityRenderers {
         event.registerEntityRenderer(ModEntities.M12hmg.get(), M12hmgRenderer::new);
         // 注册 M12roc 实体渲染器
         event.registerEntityRenderer(ModEntities.M12roc.get(), M12rocRenderer::new);
+        // 注册 M12gau 实体渲染器
+        event.registerEntityRenderer(ModEntities.M12gau.get(), M12gauRenderer::new);
     }
 }
