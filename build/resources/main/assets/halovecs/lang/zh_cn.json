@@ -3,15 +3,16 @@
   "entity.halovecs.m12": "M12 疣猪底盘",
   "item.halovecs.m12hmg_container": "M12 机枪疣猪号",
   "entity.halovecs.m12hmg": "M12 机枪疣猪号",
-  "item.halovecs.m12roc_container": "M12 火箭疣猪号",
-  "entity.halovecs.m12roc": "M12 火箭疣猪号",
+  "item.halovecs.m12roc_container": "M12R 火箭疣猪号",
+  "entity.halovecs.m12roc": "M12R 火箭疣猪号",
   "itemGroup.halovecs": "Halovecs",
   "item_group.halovecs.main": "Halovecs",
   "weapon.halovecs.m12hmg_main": "M41 防空机枪",
   "item.halovecs.m12hmg_gun": "M41 防空机枪",
   "weapon.halovecs.m12roc_main": "M79 多管防空火箭发射器",
   "weapon.halovecs.m12gau_main": "M68 异步线性感应发射器",
-  "item.halovecs.m12gau_container": "M12 高斯疣猪号",
-  "entity.halovecs.m12gau": "M12 高斯疣猪号"
+  "item.halovecs.m12gau_container": "M12G1 高斯疣猪号",
+  "entity.halovecs.m12gau": "M12G1 高斯疣猪号",
+  "entity.halovecs.m12tra": "M831 人员运输疣猪号"
   
 }

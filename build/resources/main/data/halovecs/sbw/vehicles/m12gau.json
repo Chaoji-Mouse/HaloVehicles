@@ -9,7 +9,7 @@
     }
   ],
   "TurretPos": [0, 1.5, -2],
-  "TurretTurnSpeed": [10, 10],
+  "TurretTurnSpeed": [20, 20],
   "TurretYawRange": [-180, 180],
   "TurretPitchRange": [-30, 60],
   "TurretControllerIndex": 2,
@@ -18,6 +18,7 @@
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
+      "BanHand": true,
       "Position": [0.6, 0.5, -0.2],
       "MinPitch": -30,
       "MaxPitch": 60,
@@ -44,14 +45,16 @@
     {
       "IsEnclosed": true,
       "Transform": "Turret",
-      "Position": [0, 0.5, 0],
+      "Position": [0, 1, 0],
       "MinPitch": -30,
       "MaxPitch": 60,
       "Weapons": ["MainGun"],
       "CanRotateBody": true,
+      "Sensitivity": [1, 1, 1],
       "CameraPos": {
-        "Transform": "Turret",
-        "Position": [0, 2.5, 0]
+        "Transform": "Barrel",
+        "ZoomPosition": [0, 1.5, 2],
+        "Direction": "Barrel"
       }
     }
   ],
@@ -124,27 +127,27 @@
   "TerrainCompatRotateRate": 5,
   "Weapons": {
     "MainGun": {
-      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/laser.png",
+      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/cannon_30mm.png",
       "DefaultFireMode": "Semi",
       "AvailableFireModes": "Semi",
-      "Projectile": "ray",
+      "Projectile": "superbwarfare:small_cannon_shell",
       "Range": 512,
-      "DefaultZoom": 3,
-      "RPM": 30,
-      "Velocity": 6000000000,
+      "Spread": 0.25,
+      "RPM": 50,
+      "Velocity": 40,
       "Damage": 350,
       "ExplosionDamage": 72,
-      "ExplosionRadius": 12,
-      "Spread": 0,
+      "ExplosionRadius": 4,
+      "RecoilTime": 29,
+      "RecoilForce": 0.55,
       "HeatPerShoot": 0,
       "NaturalCooldown": 0.7,
       "ShootAnimationTime": 3,
-      "AmmoCostPerShoot": 100000,
+      "AmmoCostPerShoot": 1,
       "AmmoType": [
-        "FE"
+        "superbwarfare:small_shell"
       ],
-      "Crosshair": "@VehicleCommonGun",
-      "CrosshairColor": "0xffaa00",
+      "Crosshair": "@VehicleDynamicCross",
       "Name": "weapon.halovecs.m12gau_main",
       "SoundInfo": {
         "Fire1P": "superbwarfare:prism_tank_fire_high_1p",
@@ -154,7 +157,7 @@
       "SoundRadius": 12,
       "ShootPos": {
         "Transform": "Barrel",
-        "Positions": [[0, 1, 0]],
+        "Positions": [[0, 1.5, 1.5]],
         "Directions": ["Barrel"]
       }
     }

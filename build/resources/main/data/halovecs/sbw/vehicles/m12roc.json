@@ -18,6 +18,7 @@
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
+      "BanHand": true,
       "Position": [0.6, 0.5, -0.2],
       "MinPitch": -30,
       "MaxPitch": 60,
@@ -49,9 +50,11 @@
       "MaxPitch": 60,
       "Weapons": ["MainGun"],
       "CanRotateBody": true,
+      "Sensitivity": [1, 1, 1],
       "CameraPos": {
-        "Transform": "Turret",
-        "Position": [0, 2.5, 0]
+        "Transform": "Barrel",
+        "ZoomPosition": [0, 1, 1.5],
+        "Direction": "Barrel"
       }
     }
   ],
@@ -129,7 +132,7 @@
       "DefaultFireMode": "Auto",
       "AvailableFireModes": "Auto",
       "Magazine": 6,
-      "EmptyReloadTime": 100,
+      "EmptyReloadTime": 60,
       "Projectile": "superbwarfare:small_rocket",
       "HeatPerShoot": 0.5,
       "Spread": 0.25,
@@ -139,8 +142,7 @@
       "ExplosionRadius": 5,
       "Gravity": 0.02,
       "Velocity": 16,
-      "Crosshair": "@VehicleCommonGun",
-      "CrosshairColor": "0xffaa00",
+      "Crosshair": "@VehicleDynamicCross",
       "Name": "weapon.halovecs.m12roc_main",
       "SoundInfo": {
         "Fire1P": "superbwarfare:small_rocket_fire_1p",
@@ -151,7 +153,7 @@
       "SoundRadius": 12,
       "ShootPos": {
         "Transform": "Barrel",
-        "Positions": [[0, 1, 0]],
+        "Positions": [[0, 1, 1.5]],
         "Directions": ["Barrel"]
       }
     }

@@ -5,7 +5,8 @@
     "2 #superbwarfare:storage_blocks/steel",
     "superbwarfare:small_battery_pack",
     "4 superbwarfare:wheel",
-    "superbwarfare:large_motor"
+    "superbwarfare:large_motor",
+    "superbwarfare:medium_armament_module"
   ],
   "result": {
     "entity": "halovecs:m12gau"

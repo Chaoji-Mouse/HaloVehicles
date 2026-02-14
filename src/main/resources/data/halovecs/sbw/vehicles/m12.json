@@ -12,6 +12,7 @@
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
+      "BanHand": true,
       "Position": [0.6, 0.5, -0.2],
       "MinPitch": -30,
       "MaxPitch": 60,
@@ -37,6 +38,7 @@
     },
     {
       "IsEnclosed": true,
+      "CanRotateBody": true,
       "Transform": "Vehicle",
       "Position": [0, 1.0, -2],
       //"MinPitch": -60,

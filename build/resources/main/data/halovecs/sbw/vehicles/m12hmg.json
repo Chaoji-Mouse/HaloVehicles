@@ -13,7 +13,7 @@
   "TurretPos": [0, 1.5, -2],
   
   // 炮台转动速度（x: 俯仰速度, y: 偏航速度）
-  "TurretTurnSpeed": [10, 10],
+  "TurretTurnSpeed": [20, 20],
   
   // 炮台偏航角度范围（最小, 最大）
   "TurretYawRange": [-180, 180],
@@ -31,6 +31,7 @@
     {
       "IsEnclosed": true,
       "Transform": "Vehicle",
+      "BanHand": true,
       "Position": [0.6, 0.5, -0.2],
       "MinPitch": -30,
       "MaxPitch": 60,
@@ -60,13 +61,13 @@
       "Position": [0, 0.5, 0],
       "MinPitch": -30,
       "MaxPitch": 60,
-      //"MinYaw": -95,
-      //"MaxYaw": 95,
-      "Weapons": ["MainGun"],  // 添加武器引用
-      "CanRotateBody": true,  // 允许旋转身体
+      "Weapons": ["MainGun"],
+      "CanRotateBody": true,
+      "Sensitivity": [1, 1, 1],
       "CameraPos": {
-        "Transform": "Turret",
-        "Position": [0, 2.5, 0]
+        "Transform": "Barrel",
+        "ZoomPosition": [0, 1.5, 1.5],
+        "Direction": "Barrel"
       }
     }
   ],
@@ -140,7 +141,7 @@
 
   "Weapons": {
     "MainGun": {
-      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/gun_7_62mm.png",
+      "Icon": "superbwarfare:textures/overlay/vehicle/weapon/icons/gun_12_7mm.png",
       "DefaultFireMode": "Auto",
       "AvailableFireModes": ["Auto"],
       "Projectile": "superbwarfare:projectile",
@@ -154,8 +155,7 @@
       "ShootAnimationTime": 2,
       "RecoilTime": 22,
       "RecoilForce": 0.1,
-      "Crosshair": "@VehicleCommonGun",
-      "CrosshairColor": "0xffaa00",
+      "Crosshair": "@VehicleDynamicCross",
       "Name": "weapon.halovecs.m12hmg_main",
       "SoundInfo": {
         "Fire1P": "superbwarfare:coax_fire_1p",
@@ -167,7 +167,7 @@
       "AmmoType": "@RifleAmmo",
       "ShootPos": {
         "Transform": "Barrel",
-        "Positions": [[0, 1, 0]],
+        "Positions": [[0, 1.25, 1.5]],
         "Directions": ["Barrel"]
       }
     }
