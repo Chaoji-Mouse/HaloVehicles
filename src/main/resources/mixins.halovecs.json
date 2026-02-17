@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.cmhh.halovecs.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "VehicleEngineUtilsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "halovecs.refmap.json"
+}

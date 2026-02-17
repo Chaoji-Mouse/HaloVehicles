@@ -157,7 +157,7 @@
   },
   "EngineSound": "superbwarfare:lav_150_engine",
   "HornSound": "@Land",
-  "TerrainCompat": [[1.156, 0, 1.594], [-1.156, 0, 1.594], [1.156, 0, -1.594], [-1.156, 0, -1.594]],
-  "InertiaRotateRate": 1,
-  "TerrainCompatRotateRate": 5
+  "TerrainCompat": [[1.3, 0, 2.6], [-1.3, 0, 2.6], [1.3, 0, -2.6], [-1.3, 0, -2.6]],
+  "InertiaRotateRate": 2,
+  "TerrainCompatRotateRate": 6
 }

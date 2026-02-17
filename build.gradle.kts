@@ -102,7 +102,10 @@ neoForge {
         configureEach {
             jvmArguments = listOf(
                 "-XX:+IgnoreUnrecognizedVMOptions",
-                "-XX:+AllowEnhancedClassRedefinition"
+                "-XX:+AllowEnhancedClassRedefinition",
+                "-Dmixin.debug.export=true",
+                "-Dmixin.debug.verbose=true",
+                "-Dmixin.checks.interfaces=true"
             )
             systemProperty("forge.logging.markers", "REGISTRIES")
             logLevel = org.slf4j.event.Level.DEBUG
@@ -115,6 +118,7 @@ neoForge {
         }
     }
 }
+
 
 sourceSets.main.get().resources {
     srcDir("src/generated/resources")
@@ -148,6 +152,14 @@ dependencies {
     compileOnly("mezz.jei:jei-1.21.1-common-api:${project.property("jei_version")}")
     compileOnly("mezz.jei:jei-1.21.1-neoforge-api:${project.property("jei_version")}")
     runtimeOnly("mezz.jei:jei-${project.property("minecraft_version")}-neoforge:${project.property("jei_version")}")
+
+    // Mixin 依赖
+    implementation("org.spongepowered:mixin:0.8.5")
+    annotationProcessor("org.spongepowered:mixin:0.8.5:processor")
+    
+    // Mixin Extras 提供更好的注解支持
+    implementation("io.github.llamalad7:mixinextras-neoforge:0.3.5")
+    annotationProcessor("io.github.llamalad7:mixinextras-common:0.3.5")
 }
 
 val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {

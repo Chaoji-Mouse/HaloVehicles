@@ -13,5 +13,10 @@
   "weapon.halovecs.m12gau_main": "M68 Asynchronous Linear-Induction Motor",
   "item.halovecs.m12gau_container": "M12G1 Gauss Warthog",
   "entity.halovecs.m12gau": "M12G1 Gauss Warthog",
-  "entity.halovecs.m12tra": "M831 Transport Warthog"
+  "entity.halovecs.m12tra": "M831 Transport Warthog",
+  "entity.halovecs.m12tra_container": "M831 Transport Warthog",
+  "entity.halovecs.m274": "M274 Ultra-Light All-Terrain Vehicle",
+  "entity.halovecs.m274_container": "M274 Ultra-Light All-Terrain Vehicle"
+  
+
 }

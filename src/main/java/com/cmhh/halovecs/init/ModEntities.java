@@ -6,6 +6,7 @@ import com.cmhh.halovecs.entity.vehicle.M12gauEntity;
 import com.cmhh.halovecs.entity.vehicle.M12hmgEntity;
 import com.cmhh.halovecs.entity.vehicle.M12rocEntity;
 import com.cmhh.halovecs.entity.vehicle.M12traEntity;
+import com.cmhh.halovecs.entity.vehicle.M274Entity;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
@@ -63,6 +64,16 @@ public class ModEntities {
     public static final DeferredHolder<EntityType<?>, EntityType<M12traEntity>> M12tra = 
         register("m12tra",
             EntityType.Builder.of(M12traEntity::new, MobCategory.MISC)
+                .setTrackingRange(512)      // 追踪范围（区块）
+                .setUpdateInterval(1)       // 更新间隔（tick）
+                .fireImmune()               // 防火
+                .sized(2.6f, 2.0f)          // 碰撞箱大小（宽度, 高度）
+        );
+    
+    // 注册 M274 运输载具实体
+    public static final DeferredHolder<EntityType<?>, EntityType<M274Entity>> M274 = 
+        register("m274",
+            EntityType.Builder.of(M274Entity::new, MobCategory.MISC)
                 .setTrackingRange(512)      // 追踪范围（区块）
                 .setUpdateInterval(1)       // 更新间隔（tick）
                 .fireImmune()               // 防火

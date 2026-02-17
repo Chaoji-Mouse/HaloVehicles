@@ -13,6 +13,9 @@
   "weapon.halovecs.m12gau_main": "M68 异步线性感应发射器",
   "item.halovecs.m12gau_container": "M12G1 高斯疣猪号",
   "entity.halovecs.m12gau": "M12G1 高斯疣猪号",
-  "entity.halovecs.m12tra": "M831 人员运输疣猪号"
+  "entity.halovecs.m12tra": "M831 人员运输疣猪号",
+  "entity.halovecs.m12tra_container": "M831 人员运输疣猪号",
+  "entity.halovecs.m274": "M274 超轻型全地形车",
+  "entity.halovecs.m274_container": "M274 超轻型全地形车"
   
 }

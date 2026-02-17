@@ -6,6 +6,7 @@ import com.cmhh.halovecs.client.renderer.entity.M12gauRenderer;
 import com.cmhh.halovecs.client.renderer.entity.M12hmgRenderer;
 import com.cmhh.halovecs.client.renderer.entity.M12rocRenderer;
 import com.cmhh.halovecs.client.renderer.entity.M12traRenderer;
+import com.cmhh.halovecs.client.renderer.entity.M274Renderer;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -26,5 +27,7 @@ public class ModEntityRenderers {
         event.registerEntityRenderer(ModEntities.M12gau.get(), M12gauRenderer::new);
         // 注册 M12tra 实体渲染器
         event.registerEntityRenderer(ModEntities.M12tra.get(), M12traRenderer::new);
+        // 注册 M274 实体渲染器
+        event.registerEntityRenderer(ModEntities.M274.get(), M274Renderer::new);
     }
 }
