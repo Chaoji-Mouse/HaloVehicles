@@ -89,8 +89,8 @@
     "ExplosionRadius": 7
   },
   "ThirdPersonCameraPos": [0, 1, 5],
-  "VehicleIcon": "halovecs:textures/vehicle_icon/m12_icon.png",
-  "ContainerIcon": "superbwarfare:textures/gui/vehicle/type/civilian.png",
+  "VehicleIcon": "halovecs:textures/vehicle_icon/m274_icon.png",
+  "ContainerIcon": "superbwarfare:textures/gui/vehicle/type/land.png",
   "Type": "Car",
   "CollisionLevel": {
     "Level": 3,
@@ -103,7 +103,7 @@
   },
   "EngineSound": "superbwarfare:lav_150_engine",
   "HornSound": "@Land",
-  "TerrainCompat": [[1, 0, 1.5], [-1, 0, 1.5], [1, 0, -1.5], [-1, 0, -1.5]],
+  "TerrainCompat": [[1, 0, 1], [-1, 0, 1], [1, 0, -1], [-1, 0, -1]],
   "InertiaRotateRate": 2,
-  "TerrainCompatRotateRate": 6
+  "TerrainCompatRotateRate": 5
 }
