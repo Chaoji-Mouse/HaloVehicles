@@ -15,5 +15,10 @@
   "item.halovecs.m12gau_container": "M12G1 Gauss Warthog",
   "entity.halovecs.m12gau": "M12G1 Gauss Warthog",
   "item.halovecs.m12tra_container": "M831 Transport Warthog",
-  "entity.halovecs.m12tra": "M831 Transport Warthog"
+  "entity.halovecs.m12tra": "M831 Transport Warthog",
+  "entity.halovecs.m274": "M274 Ultra-Light All-Terrain Vehicle",
+  "item.halovecs.m274_container": "M274 Ultra-Light All-Terrain Vehicle",
+  "entity.halovecs.m274m": "M274M Ultra-Light All-Terrain Vehicle",
+  "item.halovecs.m274m_container": "M274M Ultra-Light All-Terrain Vehicle",
+  "weapon.halovecs.m274m_main": "XM250 Grenade Launcher"
 }

@@ -15,5 +15,10 @@
   "item.halovecs.m12gau_container": "M12G1 高斯疣猪号",
   "entity.halovecs.m12gau": "M12G1 高斯疣猪号",
   "item.halovecs.m12tra_container": "M831 人员运输疣猪号",
-  "entity.halovecs.m12tra": "M831 人员运输疣猪号"
+  "entity.halovecs.m12tra": "M831 人员运输疣猪号",
+  "entity.halovecs.m274": "M274 超轻型全地形车",
+  "item.halovecs.m274_container": "M274 猫鼬号超轻型全地形车",
+  "entity.halovecs.m274m": "M274M 榴弹猫鼬号超轻型全地形车",
+  "item.halovecs.m274m_container": "M274M 榴弹猫鼬号超轻型全地形车",
+  "weapon.halovecs.m274m_main": "XM250 榴弹发射器"
 }

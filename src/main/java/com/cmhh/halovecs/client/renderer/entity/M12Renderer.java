@@ -10,5 +10,6 @@ public class M12Renderer extends VehicleRenderer<M12Entity> {
 
     public M12Renderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new M12Model());
+        this.shadowRadius = 0.8f;
     }
 }

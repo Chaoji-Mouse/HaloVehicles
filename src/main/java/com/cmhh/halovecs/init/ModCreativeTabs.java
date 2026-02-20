@@ -23,6 +23,8 @@ public class ModCreativeTabs {
                         output.accept(ContainerBlockItem.createInstance(ModEntities.M12ROC.get()));
                         output.accept(ContainerBlockItem.createInstance(ModEntities.M12GAU.get()));
                         output.accept(ContainerBlockItem.createInstance(ModEntities.M12TRA.get()));
+                        output.accept(ContainerBlockItem.createInstance(ModEntities.M274.get()));
+                        output.accept(ContainerBlockItem.createInstance(ModEntities.M274M.get()));
                     })
                     .build()
     );

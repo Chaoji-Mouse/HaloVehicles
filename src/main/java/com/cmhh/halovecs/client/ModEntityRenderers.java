@@ -6,6 +6,8 @@ import com.cmhh.halovecs.client.renderer.entity.M12gauRenderer;
 import com.cmhh.halovecs.client.renderer.entity.M12hmgRenderer;
 import com.cmhh.halovecs.client.renderer.entity.M12rocRenderer;
 import com.cmhh.halovecs.client.renderer.entity.M12traRenderer;
+import com.cmhh.halovecs.client.renderer.entity.M274Renderer;
+import com.cmhh.halovecs.client.renderer.entity.M274mRenderer;
 import com.cmhh.halovecs.init.ModEntities;
 
 import net.minecraftforge.api.distmarker.Dist;
@@ -23,5 +25,7 @@ public class ModEntityRenderers {
         event.registerEntityRenderer(ModEntities.M12ROC.get(), M12rocRenderer::new);
         event.registerEntityRenderer(ModEntities.M12GAU.get(), M12gauRenderer::new);
         event.registerEntityRenderer(ModEntities.M12TRA.get(), M12traRenderer::new);
+        event.registerEntityRenderer(ModEntities.M274.get(), M274Renderer::new);
+        event.registerEntityRenderer(ModEntities.M274M.get(), M274mRenderer::new);
     }
 }

@@ -6,6 +6,8 @@ import com.cmhh.halovecs.entity.vehicle.M12gauEntity;
 import com.cmhh.halovecs.entity.vehicle.M12hmgEntity;
 import com.cmhh.halovecs.entity.vehicle.M12rocEntity;
 import com.cmhh.halovecs.entity.vehicle.M12traEntity;
+import com.cmhh.halovecs.entity.vehicle.M274Entity;
+import com.cmhh.halovecs.entity.vehicle.M274mEntity;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -23,7 +25,7 @@ public class ModEntities {
                 .setTrackingRange(512)
                 .setUpdateInterval(1)
                 .fireImmune()
-                .sized(2.6f, 2.0f)
+                .sized(2.5f, 2.0f)
                 .build(Halovecs.MODID + ":m12"));
 
     public static final RegistryObject<EntityType<M12hmgEntity>> M12HMG = 
@@ -31,7 +33,7 @@ public class ModEntities {
                 .setTrackingRange(512)
                 .setUpdateInterval(1)
                 .fireImmune()
-                .sized(2.6f, 2.0f)
+                .sized(2.5f, 2.0f)
                 .build(Halovecs.MODID + ":m12hmg"));
 
     public static final RegistryObject<EntityType<M12rocEntity>> M12ROC = 
@@ -39,7 +41,7 @@ public class ModEntities {
                 .setTrackingRange(512)
                 .setUpdateInterval(1)
                 .fireImmune()
-                .sized(2.6f, 2.0f)
+                .sized(2.5f, 2.0f)
                 .build(Halovecs.MODID + ":m12roc"));
 
     public static final RegistryObject<EntityType<M12gauEntity>> M12GAU = 
@@ -47,7 +49,7 @@ public class ModEntities {
                 .setTrackingRange(512)
                 .setUpdateInterval(1)
                 .fireImmune()
-                .sized(2.6f, 2.0f)
+                .sized(2.5f, 2.0f)
                 .build(Halovecs.MODID + ":m12gau"));
 
     public static final RegistryObject<EntityType<M12traEntity>> M12TRA = 
@@ -55,6 +57,22 @@ public class ModEntities {
                 .setTrackingRange(512)
                 .setUpdateInterval(1)
                 .fireImmune()
-                .sized(2.6f, 2.0f)
+                .sized(2.5f, 2.0f)
                 .build(Halovecs.MODID + ":m12tra"));
+
+    public static final RegistryObject<EntityType<M274Entity>> M274 = 
+        ENTITY_TYPES.register("m274", () -> EntityType.Builder.of(M274Entity::new, MobCategory.MISC)
+                .setTrackingRange(512)
+                .setUpdateInterval(1)
+                .fireImmune()
+                .sized(1.5f, 1.5f)
+                .build(Halovecs.MODID + ":m274"));
+
+    public static final RegistryObject<EntityType<M274mEntity>> M274M = 
+        ENTITY_TYPES.register("m274m", () -> EntityType.Builder.of(M274mEntity::new, MobCategory.MISC)
+                .setTrackingRange(512)
+                .setUpdateInterval(1)
+                .fireImmune()
+                .sized(1.5f, 1.5f)
+                .build(Halovecs.MODID + ":m274m"));
 }
