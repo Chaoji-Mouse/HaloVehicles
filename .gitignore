@@ -6,6 +6,7 @@ out/
 
 # IDE
 .idea/
+.trae/
 *.iml
 *.ipr
 *.iws
