@@ -4,6 +4,79 @@
 
 这是一个基于 SuperbWarfare 模组的 Halo 载具扩展模组，使用 Forge 1.20.1 和 GeckoLib 4.x。
 
+## GitHub 仓库
+
+### 仓库信息
+
+| 项目 | 值 |
+|------|-----|
+| **仓库地址** | https://github.com/Chaoji-Mouse/HaloVehicles |
+| **远程名称** | `HaloVehicles` |
+| **当前分支** | `1.20.1_forge` |
+| **推送目标** | `forge1.20.1` |
+
+### 分支说明
+
+| 分支名 | 用途 |
+|--------|------|
+| `main` | 主分支（1.21.1 NeoForge 版本） |
+| `forge1.20.1` | Forge 1.20.1 版本 |
+| `1.20.1_forge` | 本地开发分支 |
+
+### Git 操作流程
+
+```powershell
+# 查看状态
+git status
+
+# 添加所有更改
+git add -A
+
+# 提交更改
+git commit -m "feat: 描述内容"
+
+# 推送到远程（本地分支:远程分支）
+git push HaloVehicles 1.20.1_forge:forge1.20.1
+
+# 拉取远程更新
+git pull HaloVehicles forge1.20.1
+```
+
+### 提交信息规范
+
+使用 Conventional Commits 格式：
+
+| 类型 | 说明 | 示例 |
+|------|------|------|
+| `feat` | 新功能 | `feat: Add M274 Mongoose vehicle` |
+| `fix` | 修复 Bug | `fix: Fix renderer registration crash` |
+| `docs` | 文档更新 | `docs: Update project rules` |
+| `refactor` | 代码重构 | `refactor: Simplify entity registration` |
+| `chore` | 杂项 | `chore: Update dependencies` |
+
+### 完整开发流程
+
+```powershell
+# 1. 开发代码
+# ...
+
+# 2. 构建测试
+.\gradlew.bat build --no-daemon
+
+# 3. 复制到测试目录
+Copy-Item "build\libs\halovecs-1.0.0.jar" "D:\mc\.minecraft\versions\1.20.1-Forge_47.4.16\mods\" -Force
+
+# 4. 游戏测试
+# ...
+
+# 5. 确认无误后提交
+git add -A
+git commit -m "feat: 描述内容"
+git push HaloVehicles 1.20.1_forge:forge1.20.1
+```
+
+---
+
 ## 开发工作流程
 
 ### 标准构建流程
