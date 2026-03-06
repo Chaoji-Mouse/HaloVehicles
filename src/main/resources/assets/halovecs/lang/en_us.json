@@ -19,7 +19,12 @@
   "entity.halovecs.m274_container": "M274 Ultra-Light All-Terrain Vehicle",
   "entity.halovecs.m274m": "M274M Ultra-Light All-Terrain Vehicle",
   "entity.halovecs.m274m_container": "M274M Ultra-Light All-Terrain Vehicle",
-  "weapon.halovecs.m274m_main": "XM250 Grenade Launcher"
-  
+  "weapon.halovecs.m274m_main": "XM250 Grenade Launcher",
+  "item.halovecs.m808_container": "M808 Scorpion",
+  "entity.halovecs.m808": "M808 Scorpion",
+  "weapon.halovecs.m808_main": "150mm ETC smoothbore gun",
+  "item.halovecs.m808_gun": "150mm ETC smoothbore gun",
+  "weapon.halovecs.m808_coax": "M247 Coaxial Machine Gun",
+  "weapon.halovecs.m808_pass": "M247T Passenger Machine Gun"
 
 }

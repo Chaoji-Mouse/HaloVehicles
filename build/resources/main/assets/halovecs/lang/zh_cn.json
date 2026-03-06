@@ -19,6 +19,13 @@
   "entity.halovecs.m274_container": "M274 猫鼬号超轻型全地形车",
   "entity.halovecs.m274m": "M274M 榴弹猫鼬号超轻型全地形车",
   "entity.halovecs.m274m_container": "M274M 榴弹猫鼬号超轻型全地形车",
-  "weapon.halovecs.m274m_main": "XM250 榴弹发射器"
+  "weapon.halovecs.m274m_main": "XM250 榴弹发射器",
+  "item.halovecs.m808_container": "M808 天蝎号",
+  "entity.halovecs.m808": "M808 天蝎号",
+  "weapon.halovecs.m808_main": "150mm ETC 滑膛炮",
+  "item.halovecs.m808_gun": "150mm ETC 滑膛炮",
+  "weapon.halovecs.m808_coax": "M247 同轴机枪",
+  "weapon.halovecs.m808_pass": "M247T 机枪"
+
   
 }
