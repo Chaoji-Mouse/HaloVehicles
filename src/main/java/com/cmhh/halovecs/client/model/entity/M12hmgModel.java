@@ -14,8 +14,23 @@ public class M12hmgModel extends VehicleModel<M12hmgEntity> {
     }
 
     @Override
-    public ResourceLocation getTextureResource(M12hmgEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12hmg.png");
+    public ResourceLocation getTextureResource(M12hmgEntity entity) {
+        // 完全仿照TruckModel的getTextureResource方法模式
+        int variant = entity.getTextureVariant();
+        
+        switch (variant) {
+            case M12hmgEntity.VARIANT_CITY:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12hmg_city.png");
+            case M12hmgEntity.VARIANT_DUST:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12hmg_dust.png");
+            case M12hmgEntity.VARIANT_SNOW:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12hmg_snow.png");
+            case M12hmgEntity.VARIANT_COMP:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12hmg_comp.png");
+            case M12hmgEntity.VARIANT_DEFAULT:
+            default:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12hmg.png");
+        }
     }
 
     @Override

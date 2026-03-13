@@ -65,7 +65,7 @@
     "EngineSoundVolume": 0.6
   },
   "UpStep": 2,
-  "Mass": 7.5,
+  "Mass": 3,
   "RotateOffsetHeight": 0.5,
   "DamageModifiers": [
     "All * 0.5",

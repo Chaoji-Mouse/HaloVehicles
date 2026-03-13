@@ -14,8 +14,23 @@ public class M808Model extends VehicleModel<M808Entity> {
     }
 
     @Override
-    public ResourceLocation getTextureResource(M808Entity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m808.png");
+    public ResourceLocation getTextureResource(M808Entity entity) {
+        // 完全仿照TruckModel的getTextureResource方法模式
+        int variant = entity.getTextureVariant();
+        
+        switch (variant) {
+            case M808Entity.VARIANT_CITY:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m808_city.png");
+            case M808Entity.VARIANT_DUST:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m808_dust.png");
+            case M808Entity.VARIANT_SNOW:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m808_snow.png");
+            case M808Entity.VARIANT_COMP:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m808_comp.png");
+            case M808Entity.VARIANT_DEFAULT:
+            default:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m808.png");
+        }
     }
 
     @Override

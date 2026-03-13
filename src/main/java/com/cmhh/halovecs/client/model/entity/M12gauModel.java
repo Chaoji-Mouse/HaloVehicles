@@ -15,8 +15,23 @@ public class M12gauModel extends VehicleModel<M12gauEntity> {
     }
 
     @Override
-    public ResourceLocation getTextureResource(M12gauEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12gau.png");
+    public ResourceLocation getTextureResource(M12gauEntity entity) {
+        // 完全仿照TruckModel的getTextureResource方法模式
+        int variant = entity.getTextureVariant();
+        
+        switch (variant) {
+            case M12gauEntity.VARIANT_CITY:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12gau_city.png");
+            case M12gauEntity.VARIANT_DUST:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12gau_dust.png");
+            case M12gauEntity.VARIANT_SNOW:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12gau_snow.png");
+            case M12gauEntity.VARIANT_COMP:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12gau_comp.png");
+            case M12gauEntity.VARIANT_DEFAULT:
+            default:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12gau.png");
+        }
     }
 
     @Override

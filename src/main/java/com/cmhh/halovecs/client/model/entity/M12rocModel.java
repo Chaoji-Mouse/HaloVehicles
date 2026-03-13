@@ -15,8 +15,23 @@ public class M12rocModel extends VehicleModel<M12rocEntity> {
     }
 
     @Override
-    public ResourceLocation getTextureResource(M12rocEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12roc.png");
+    public ResourceLocation getTextureResource(M12rocEntity entity) {
+        // 完全仿照TruckModel的getTextureResource方法模式
+        int variant = entity.getTextureVariant();
+        
+        switch (variant) {
+            case M12rocEntity.VARIANT_CITY:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12roc_city.png");
+            case M12rocEntity.VARIANT_DUST:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12roc_dust.png");
+            case M12rocEntity.VARIANT_SNOW:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12roc_snow.png");
+            case M12rocEntity.VARIANT_COMP:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12roc_comp.png");
+            case M12rocEntity.VARIANT_DEFAULT:
+            default:
+                return ResourceLocation.fromNamespaceAndPath(Halovecs.MODID, "textures/entity/m12roc.png");
+        }
     }
 
     @Override

@@ -40,7 +40,7 @@
   ],
   "EngineType": "Wheel",
   "EngineInfo": {
-    "Buoyancy": 0,
+    "Buoyancy": 0.02,
     "EnergyCostRate": 64,
     "WheelRotSpeed": 3,
     "WheelDifferential": 5,
@@ -53,7 +53,7 @@
     "EngineSoundVolume": 0.6
   },
   "UpStep": 2,
-  "Mass": 5.5,
+  "Mass": 0.5,
   "RotateOffsetHeight": 0.5,
   "DamageModifiers": [
     "All * 0.5",

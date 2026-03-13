@@ -112,7 +112,7 @@
     "EngineSoundVolume": 0.6
   },
   "UpStep": 2,
-  "Mass": 7.5,
+  "Mass": 66,
   "RotateOffsetHeight": 0.5,
   "DamageModifiers": [
     "All * 0.5",
@@ -177,7 +177,7 @@
       "IsArmorPiercingProjectile": true,
       "DefaultZoom": 3,
       "Magazine": 1,
-      "EmptyReloadTime": 50,
+      "EmptyReloadTime": 40,
       "Velocity": 40,
       "Damage": 700,
       "ExplosionDamage": 80,
@@ -186,7 +186,7 @@
       "RecoilForce": 1.0,
       "ShootShake": [8, 10, 60],
       "Spread": 0.02,
-      "ShootAnimationTime": 25,
+      "ShootAnimationTime": 40,
       "Crosshair": "@VehicleDynamicCross",
       "Name": "weapon.superbwarfare.cannon_ap",
       "AmmoType": [
