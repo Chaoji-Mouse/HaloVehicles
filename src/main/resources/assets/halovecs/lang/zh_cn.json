@@ -25,7 +25,14 @@
   "weapon.halovecs.m808_main": "150mm ETC 滑膛炮",
   "item.halovecs.m808_gun": "150mm ETC 滑膛炮",
   "weapon.halovecs.m808_coax": "M247 同轴机枪",
-  "weapon.halovecs.m808_pass": "M247T 机枪"
+  "weapon.halovecs.m808_pass": "M247T 机枪",
+  "item.halovecs.t77h_container": "T77H 鹈鹕号",
+  "entity.halovecs.t77h": "T77H 鹈鹕号",
+  "weapon.halovecs.a_2_missile_block": "铁砧-II 空对地导弹[方块模式]",
+  "weapon.halovecs.a_2_missile_entity": "铁砧-II 空对地导弹[实体模式]",
+  "weapon.halovecs.70mm_gau_8_a": "M370伸缩自动机炮",
+  "weapon.halovecs.70mm_rocket": "70mm火箭弹"
+
 
   
 }

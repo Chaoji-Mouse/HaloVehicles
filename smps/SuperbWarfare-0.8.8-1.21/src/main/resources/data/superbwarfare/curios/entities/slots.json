@@ -1,0 +1,10 @@
+{
+  "entities": [
+    "player"
+  ],
+  "slots": [
+    "dog_tag",
+    "iff",
+    "back"
+  ]
+}

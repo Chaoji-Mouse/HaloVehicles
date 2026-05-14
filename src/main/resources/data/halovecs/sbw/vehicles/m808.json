@@ -14,9 +14,7 @@
   ],
   "TurretPos": [0, 3, -2],
   "TurretTurnSpeed": [7, 7],
-  "TurretYawRange": [-180, 180],
   "TurretPitchRange": [-30, 60],
-  //"TurretControllerIndex": 0,
   "BarrelPos": [0, 0, 0],
   "PassengerWeaponStationPos": [-0.5, 1, 1.5],
   "PassengerWeaponStationBarrelPos": [0, 0, 0],
@@ -39,15 +37,13 @@
       "Weapons": ["MainGun", "Coax"],
       "CanRotateHead": false,
       "MinPitch": -15,
-      "MaxPitch": 60
+      "MaxPitch": 60,
+      "HasThermalImaging": true
     },
     {
       "Transform": "Vehicle",
       "CameraPos": {
         "Transform": "Vehicle"
-        //"UseFixedCameraPos": true,
-        //"ZoomPosition": [-0.5, 2, 1.5]
-        //"Direction": "Vehicle"
       },
       "Position": [
         -0.5, 1, 1.25
@@ -101,14 +97,14 @@
     "Buoyancy": 0,
     "EnergyCostRate": 128,
     "WheelRotSpeed": 1.25,
-    "WheelDifferential": 0.55,
-    "TrackRotSpeed": 1.3,
-    "TrackDifferential": 0.5,
-    "MaxForwardSpeedRate": 1.1,
+    "WheelDifferential": 0.75,
+    "TrackRotSpeed": 3.6,
+    "TrackDifferential": 1.7,
+    "MaxForwardSpeedRate": 0.8,
     "MaxBackwardSpeedRate": 0.8,
     "Increment": 0.02,
     "Decrement": 0.02,
-    "SteeringSpeed": 0.3,
+    "SteeringSpeed": 0.15,
     "EngineSoundVolume": 0.6
   },
   "UpStep": 2,
@@ -161,7 +157,7 @@
     ]
   },
   "EngineSound": "superbwarfare:lav_150_engine",
-  "HornSound": "@Land",
+  "HornSound": "superbwarfare:car_horn",
   "TerrainCompat": [[3, 0, 3], [-3, 0, 3], [3, 0, -3], [-3, 0, -3]],
   "InertiaRotateRate": 2,
   "TerrainCompatRotateRate": 5,
@@ -268,7 +264,7 @@
       "RecoilForce": 0.05,
       "HeatPerShoot": 3,
       "NaturalCooldown": 1,
-      "ShootAnimationTime": 2.6,
+      "ShootAnimationTime": 3,
       "AmmoType": "@HeavyAmmo",
       "ShootPos": {
         "Transform": "Barrel",
@@ -301,7 +297,7 @@
       "RecoilForce": 0.05,
       "HeatPerShoot": 3,
       "NaturalCooldown": 1,
-      "ShootAnimationTime": 2.6,
+      "ShootAnimationTime": 3,
       "AmmoType": "@HeavyAmmo",
       "ShootPos": {
         "Transform": "Vehicle",
@@ -309,6 +305,7 @@
         "Directions": ["Passenger"]
       },
       "Crosshair": "@VehicleDynamicCross",
+      "HudType": "@Land",
       "Name": "weapon.halovecs.m808_pass",
       "SoundInfo": {
         "Fire1P": "superbwarfare:m_2_hb_fire_1p",

@@ -20,16 +20,16 @@ public class M274VehicleEngineUtils {
      * 完美复制SuperbWarfare逻辑，只修改方向舵角度限制
      */
     public static void wheelEngineForM274(VehicleEntity vehicle, EngineInfo.Wheel engineInfo) {
-        // 1. 获取原版参数（从engineInfo读取，保持原值）
-        double buoyancy = engineInfo.buoyancy;
-        int energyCost = (int) (engineInfo.energyCostRate * Mth.abs(vehicle.getEntityData().get(VehicleEntity.POWER)));
-        double wheelRotSpeed = engineInfo.wheelRotSpeed;
-        double wheelDifferential = engineInfo.wheelDifferential; // 使用原版值
-        float maxForwardSpeedRate = engineInfo.maxForwardSpeedRate;
-        float maxBackwardSpeedRate = engineInfo.maxBackwardSpeedRate;
-        float powerAdd = engineInfo.increment;
-        float powerReduce = engineInfo.decrement;
-        float steeringSpeed = engineInfo.steeringSpeed; // 使用原版值
+        // 1. 获取原版参数（从engineInfo读取，使用 getter 方法访问 Kotlin 私有字段）
+        double buoyancy = engineInfo.getBuoyancy();
+        int energyCost = (int) (engineInfo.getEnergyCostRate() * Mth.abs(vehicle.getEntityData().get(VehicleEntity.POWER)));
+        double wheelRotSpeed = engineInfo.getWheelRotSpeed();
+        double wheelDifferential = engineInfo.getWheelDifferential(); // 使用原版值
+        float maxForwardSpeedRate = engineInfo.getMaxForwardSpeedRate();
+        float maxBackwardSpeedRate = engineInfo.getMaxBackwardSpeedRate();
+        float powerAdd = engineInfo.getIncrement();
+        float powerReduce = engineInfo.getDecrement();
+        float steeringSpeed = engineInfo.getSteeringSpeed(); // 使用原版值
         
         // 2. 浮力计算（原版逻辑）
         if (buoyancy != 0) {

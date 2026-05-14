@@ -10,7 +10,6 @@
   ],
   "TurretPos": [0, 1.5, -2],
   "TurretTurnSpeed": [10, 10],
-  "TurretYawRange": [-180, 180],
   "TurretPitchRange": [-30, 60],
   "TurretControllerIndex": 2,
   "BarrelPos": [0, 1, 0],
@@ -121,7 +120,7 @@
     ]
   },
   "EngineSound": "superbwarfare:lav_150_engine",
-  "HornSound": "@Land",
+  "HornSound": "superbwarfare:car_horn",
   "TerrainCompat": [[1.3, 0, 2], [-1.3, 0, 2], [1.3, 0, -2], [-1.3, 0, -2]],
   "InertiaRotateRate": 2,
   "TerrainCompatRotateRate": 5,

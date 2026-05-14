@@ -3,19 +3,23 @@ package com.cmhh.halovecs.entity.vehicle;
 
 import com.atsuishio.superbwarfare.entity.vehicle.base.GeoVehicleEntity;
 import com.atsuishio.superbwarfare.entity.vehicle.damage.DamageModifier;
+import com.atsuishio.superbwarfare.tools.ParticleTool;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -181,5 +185,23 @@ public class M808Entity extends GeoVehicleEntity implements GeoEntity {
     @Override
     public float getEngineMaxHealth() {
         return 150; // 发动机生命值
+    }
+
+    @Override
+    public void vehicleShoot(LivingEntity living, java.util.UUID uuid, Vec3 targetPos) {
+        super.vehicleShoot(living, uuid, targetPos);
+
+        // 主炮开火时生成枪口火焰
+        if (living == getFirstPassenger() && getWeaponIndex(0) == 0) {
+            Level level = living.level();
+            if (level instanceof ServerLevel serverLevel) {
+                ParticleTool.spawnBigCannonMuzzleParticles(
+                    getShootVec(living, 1f),
+                    getShootPos(living, 1f),
+                    serverLevel,
+                    this
+                );
+            }
+        }
     }
 }

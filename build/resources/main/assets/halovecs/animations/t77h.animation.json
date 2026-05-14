@@ -1,0 +1,137 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"idle2": {
+			"animation_length": 0.0333,
+			"bones": {
+				"gear": {
+					"rotation": [0, 0, 0]
+				},
+				"gear2": {
+					"rotation": [0, 0, 0]
+				},
+				"gear3": {
+					"rotation": [0, 0, 0]
+				},
+				"geardoor2": {
+					"rotation": [0, 0, 0]
+				},
+				"geardoor": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"gearing": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"gear": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [-100, 0, 0]
+					}
+				},
+				"gear2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [60, 30, 0]
+					}
+				},
+				"gear3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [60, -30, 0]
+					}
+				},
+				"geardoor2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [15, 0, 0]
+					}
+				},
+				"geardoor": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [120, 0, 0]
+					}
+				}
+			}
+		},
+		"idle": {
+			"animation_length": 0.0333,
+			"bones": {
+				"gear": {
+					"rotation": [-100, 0, 0]
+				},
+				"gear2": {
+					"rotation": [60, 30, 0]
+				},
+				"gear3": {
+					"rotation": [60, -30, 0]
+				},
+				"geardoor2": {
+					"rotation": [15, 0, 0]
+				},
+				"geardoor": {
+					"rotation": [120, 0, 0]
+				}
+			}
+		},
+		"fire": {
+			"animation_length": 0.125,
+			"bones": {
+				"flare": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.0417": [5, 5, 5],
+						"0.125": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"fire_idle": {
+			"animation_length": 0.0417,
+			"bones": {
+				"flare": {
+					"scale": [0, 0, 0]
+				}
+			}
+		},
+		"gearing2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"gear": {
+					"rotation": {
+						"0.0": [-100, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"gear2": {
+					"rotation": {
+						"0.0": [60, 30, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"gear3": {
+					"rotation": {
+						"0.0": [60, -30, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"geardoor2": {
+					"rotation": {
+						"0.0": [15, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"geardoor": {
+					"rotation": {
+						"0.0": [120, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

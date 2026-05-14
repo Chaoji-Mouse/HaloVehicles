@@ -28,10 +28,6 @@
       "CanRotateBody": true,
       "Transform": "Vehicle",
       "Position": [0, 0.5, -1],
-      //"MinPitch": -60,
-      //"MaxPitch": 60,
-      //"MinYaw": -95,
-      //"MaxYaw": 95,
       "CameraPos": {
         "Transform": "Vehicle",
         "Position": [0, 2.5, 0]
@@ -102,7 +98,7 @@
     ]
   },
   "EngineSound": "superbwarfare:lav_150_engine",
-  "HornSound": "@Land",
+  "HornSound": "superbwarfare:car_horn",
   "TerrainCompat": [[1, 0, 1], [-1, 0, 1], [1, 0, -1], [-1, 0, -1]],
   "InertiaRotateRate": 2,
   "TerrainCompatRotateRate": 5

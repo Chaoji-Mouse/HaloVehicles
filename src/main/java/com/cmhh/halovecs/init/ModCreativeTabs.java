@@ -1,8 +1,7 @@
 package com.cmhh.halovecs.init;
 
 import com.atsuishio.superbwarfare.init.ModItems;
-import com.atsuishio.superbwarfare.item.common.container.ContainerBlockItem;
-import com.atsuishio.superbwarfare.item.common.container.ContainerBlockItem;
+import com.atsuishio.superbwarfare.item.container.ContainerBlockItem;
 import com.cmhh.halovecs.Halovecs;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -29,6 +28,7 @@ public class ModCreativeTabs {
                 output.accept(ContainerBlockItem.createInstance(ModEntities.M274.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.M274m.get()));
                 output.accept(ContainerBlockItem.createInstance(ModEntities.M808.get()));
+                output.accept(ContainerBlockItem.createInstance(ModEntities.T77H.get()));
             })
             .build());
     
