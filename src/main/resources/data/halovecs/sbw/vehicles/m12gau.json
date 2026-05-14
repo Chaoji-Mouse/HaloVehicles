@@ -63,7 +63,7 @@
     "EnergyCostRate": 64,
     "WheelRotSpeed": 1.5,
     "WheelDifferential": 2,
-    "MaxForwardSpeedRate": 1,
+    "MaxForwardSpeedRate": 1.5,
     "MaxBackwardSpeedRate": 1,
     "Increment": 0.05,
     "Decrement": 0.03,
